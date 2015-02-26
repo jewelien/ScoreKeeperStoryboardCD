@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC7B1C841A9FD26500B3FAF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7B1C831A9FD26500B3FAF6 /* main.m */; };
+		FC7B1C871A9FD26500B3FAF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7B1C861A9FD26500B3FAF6 /* AppDelegate.m */; };
+		FC7B1C8A1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7B1C881A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodeld */; };
+		FC7B1C8D1A9FD26500B3FAF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7B1C8C1A9FD26500B3FAF6 /* ViewController.m */; };
+		FC7B1C901A9FD26500B3FAF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7B1C8E1A9FD26500B3FAF6 /* Main.storyboard */; };
+		FC7B1C921A9FD26500B3FAF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7B1C911A9FD26500B3FAF6 /* Images.xcassets */; };
+		FC7B1C951A9FD26500B3FAF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7B1C931A9FD26500B3FAF6 /* LaunchScreen.xib */; };
+		FC7B1CA11A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7B1CA01A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC7B1C9B1A9FD26500B3FAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC7B1C761A9FD26500B3FAF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC7B1C7D1A9FD26500B3FAF6;
+			remoteInfo = ScoreKeeperStoryboardCD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC7B1C7E1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreKeeperStoryboardCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7B1C821A9FD26500B3FAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7B1C831A9FD26500B3FAF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC7B1C851A9FD26500B3FAF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC7B1C861A9FD26500B3FAF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC7B1C891A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScoreKeeperStoryboardCD.xcdatamodel; sourceTree = "<group>"; };
+		FC7B1C8B1A9FD26500B3FAF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC7B1C8C1A9FD26500B3FAF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC7B1C8F1A9FD26500B3FAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC7B1C911A9FD26500B3FAF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC7B1C941A9FD26500B3FAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FC7B1C9A1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperStoryboardCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7B1C9F1A9FD26500B3FAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7B1CA01A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeperStoryboardCDTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC7B1C7B1A9FD26500B3FAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7B1C971A9FD26500B3FAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC7B1C751A9FD26500B3FAF6 = {
+			isa = PBXGroup;
+			children = (
+				FC7B1C801A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD */,
+				FC7B1C9D1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests */,
+				FC7B1C7F1A9FD26500B3FAF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC7B1C7F1A9FD26500B3FAF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B1C7E1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.app */,
+				FC7B1C9A1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC7B1C801A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B1C851A9FD26500B3FAF6 /* AppDelegate.h */,
+				FC7B1C861A9FD26500B3FAF6 /* AppDelegate.m */,
+				FC7B1C8B1A9FD26500B3FAF6 /* ViewController.h */,
+				FC7B1C8C1A9FD26500B3FAF6 /* ViewController.m */,
+				FC7B1C8E1A9FD26500B3FAF6 /* Main.storyboard */,
+				FC7B1C911A9FD26500B3FAF6 /* Images.xcassets */,
+				FC7B1C931A9FD26500B3FAF6 /* LaunchScreen.xib */,
+				FC7B1C881A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodeld */,
+				FC7B1C811A9FD26500B3FAF6 /* Supporting Files */,
+			);
+			path = ScoreKeeperStoryboardCD;
+			sourceTree = "<group>";
+		};
+		FC7B1C811A9FD26500B3FAF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B1C821A9FD26500B3FAF6 /* Info.plist */,
+				FC7B1C831A9FD26500B3FAF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC7B1C9D1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B1CA01A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.m */,
+				FC7B1C9E1A9FD26500B3FAF6 /* Supporting Files */,
+			);
+			path = ScoreKeeperStoryboardCDTests;
+			sourceTree = "<group>";
+		};
+		FC7B1C9E1A9FD26500B3FAF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B1C9F1A9FD26500B3FAF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC7B1C7D1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC7B1CA41A9FD26500B3FAF6 /* Build configuration list for PBXNativeTarget "ScoreKeeperStoryboardCD" */;
+			buildPhases = (
+				FC7B1C7A1A9FD26500B3FAF6 /* Sources */,
+				FC7B1C7B1A9FD26500B3FAF6 /* Frameworks */,
+				FC7B1C7C1A9FD26500B3FAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreKeeperStoryboardCD;
+			productName = ScoreKeeperStoryboardCD;
+			productReference = FC7B1C7E1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC7B1C991A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC7B1CA71A9FD26500B3FAF6 /* Build configuration list for PBXNativeTarget "ScoreKeeperStoryboardCDTests" */;
+			buildPhases = (
+				FC7B1C961A9FD26500B3FAF6 /* Sources */,
+				FC7B1C971A9FD26500B3FAF6 /* Frameworks */,
+				FC7B1C981A9FD26500B3FAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC7B1C9C1A9FD26500B3FAF6 /* PBXTargetDependency */,
+			);
+			name = ScoreKeeperStoryboardCDTests;
+			productName = ScoreKeeperStoryboardCDTests;
+			productReference = FC7B1C9A1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC7B1C761A9FD26500B3FAF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Julien Guanzon";
+				TargetAttributes = {
+					FC7B1C7D1A9FD26500B3FAF6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FC7B1C991A9FD26500B3FAF6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FC7B1C7D1A9FD26500B3FAF6;
+					};
+				};
+			};
+			buildConfigurationList = FC7B1C791A9FD26500B3FAF6 /* Build configuration list for PBXProject "ScoreKeeperStoryboardCD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC7B1C751A9FD26500B3FAF6;
+			productRefGroup = FC7B1C7F1A9FD26500B3FAF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC7B1C7D1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD */,
+				FC7B1C991A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC7B1C7C1A9FD26500B3FAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7B1C901A9FD26500B3FAF6 /* Main.storyboard in Resources */,
+				FC7B1C951A9FD26500B3FAF6 /* LaunchScreen.xib in Resources */,
+				FC7B1C921A9FD26500B3FAF6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7B1C981A9FD26500B3FAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC7B1C7A1A9FD26500B3FAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7B1C871A9FD26500B3FAF6 /* AppDelegate.m in Sources */,
+				FC7B1C841A9FD26500B3FAF6 /* main.m in Sources */,
+				FC7B1C8D1A9FD26500B3FAF6 /* ViewController.m in Sources */,
+				FC7B1C8A1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7B1C961A9FD26500B3FAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7B1CA11A9FD26500B3FAF6 /* ScoreKeeperStoryboardCDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC7B1C9C1A9FD26500B3FAF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC7B1C7D1A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD */;
+			targetProxy = FC7B1C9B1A9FD26500B3FAF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC7B1C8E1A9FD26500B3FAF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC7B1C8F1A9FD26500B3FAF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC7B1C931A9FD26500B3FAF6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC7B1C941A9FD26500B3FAF6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC7B1CA21A9FD26500B3FAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC7B1CA31A9FD26500B3FAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC7B1CA51A9FD26500B3FAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreKeeperStoryboardCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC7B1CA61A9FD26500B3FAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreKeeperStoryboardCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC7B1CA81A9FD26500B3FAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoreKeeperStoryboardCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreKeeperStoryboardCD.app/ScoreKeeperStoryboardCD";
+			};
+			name = Debug;
+		};
+		FC7B1CA91A9FD26500B3FAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoreKeeperStoryboardCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreKeeperStoryboardCD.app/ScoreKeeperStoryboardCD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC7B1C791A9FD26500B3FAF6 /* Build configuration list for PBXProject "ScoreKeeperStoryboardCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7B1CA21A9FD26500B3FAF6 /* Debug */,
+				FC7B1CA31A9FD26500B3FAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC7B1CA41A9FD26500B3FAF6 /* Build configuration list for PBXNativeTarget "ScoreKeeperStoryboardCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7B1CA51A9FD26500B3FAF6 /* Debug */,
+				FC7B1CA61A9FD26500B3FAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC7B1CA71A9FD26500B3FAF6 /* Build configuration list for PBXNativeTarget "ScoreKeeperStoryboardCDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7B1CA81A9FD26500B3FAF6 /* Debug */,
+				FC7B1CA91A9FD26500B3FAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC7B1C881A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC7B1C891A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodel */,
+			);
+			currentVersion = FC7B1C891A9FD26500B3FAF6 /* ScoreKeeperStoryboardCD.xcdatamodel */;
+			path = ScoreKeeperStoryboardCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC7B1C761A9FD26500B3FAF6 /* Project object */;
+}
