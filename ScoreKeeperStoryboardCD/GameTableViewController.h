@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GameTableViewController.h
 //  ScoreKeeperStoryboardCD
 //
 //  Created by Julien Guanzon on 2/26/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GameTableViewController : UITableViewController
 
 @end
-
