@@ -8,7 +8,7 @@
 
 #import "ScoreTableViewCell.h"
 
-@interface ScoreTableViewCell ()
+@interface ScoreTableViewCell () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -29,7 +29,7 @@
     self.nameField.text = player.name;
     self.scoreLabel.text = player.score;
     self.scoreStepper.value = [player.score doubleValue];
-    [[GameController sharedInstance] save];
+    
     
 }
 - (IBAction)stepperTapped:(id)sender {
@@ -40,8 +40,19 @@
     
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
+- (IBAction)savePlayerName:(id)sender {
+    self.player.name = self.nameField.text; //?
+    [[GameController sharedInstance] save];  //?
+}
 
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+
+}
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

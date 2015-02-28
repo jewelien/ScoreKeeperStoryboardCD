@@ -16,6 +16,11 @@
 
 @implementation GameTableViewController
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -24,7 +29,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.tableView.delegate = self;
+//    self.tableView.delegate = self; //?
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,8 +54,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"gameCell" forIndexPath:indexPath];
     
     Game *game = [[GameController sharedInstance].games objectAtIndex:indexPath.row];
-    cell.textLabel.text = game.title;
-    
+    cell.textLabel.text = game.title;  ///  working
     return cell;
 }
 

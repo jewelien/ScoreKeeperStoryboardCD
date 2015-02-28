@@ -9,7 +9,7 @@
 #import "GameDetailViewController.h"
 #import "GameDetailTableViewDatasource.h"
 
-@interface GameDetailViewController ()
+@interface GameDetailViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet GameDetailTableViewDatasource *datasource;
@@ -22,7 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.titleField.text = self.game.title;
+    self.titleField.text = self.game.title; //? working
+    [self.tableView reloadData];
+    
+}
+
+- (IBAction)gameTitleSave:(id)sender {
+    self.game.title = self.titleField.text;
+    [[GameController sharedInstance] save];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField  {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)addPlayer:(id)sender {
@@ -33,6 +45,7 @@
 
 - (void)updateWithGame:(Game *)game {
     self.game = game;
+//    self.titleField.text = self.game.title;
     [self.datasource updatePlayerWithGame:game];
 }
 
