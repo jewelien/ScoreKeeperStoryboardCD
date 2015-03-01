@@ -19,10 +19,18 @@
 
 @implementation GameDetailViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.titleField.text = self.game.title;
+    self.titleField.text = self.game.title;//when saved game is selected and pushes to this VC title textField would be filled with the the game title selected.
     [self.tableView reloadData];
     
 }
@@ -48,13 +56,8 @@
     self.game = game;
     [self.datasource updatePlayerWithGame:game];
 }
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-    }
-    return self;
-}
+
+
 
 
 

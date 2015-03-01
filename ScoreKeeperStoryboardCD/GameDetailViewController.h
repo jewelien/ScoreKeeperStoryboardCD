@@ -11,6 +11,8 @@
 
 @interface GameDetailViewController : UIViewController
 
+
+
 @property (nonatomic, strong) Game *game;
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 

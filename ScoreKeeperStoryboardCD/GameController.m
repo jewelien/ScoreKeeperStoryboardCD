@@ -43,9 +43,6 @@
 }
 
 - (void)removePlayer:(Player *)player {
-    if (!player) {
-        return;
-    }
     [player.managedObjectContext deleteObject:player];
     [self save];
 }

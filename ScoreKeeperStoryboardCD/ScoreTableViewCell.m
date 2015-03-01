@@ -47,10 +47,6 @@
 
 
 - (IBAction)savePlayerName:(id)sender {
-    //textfield did end editing
-//    if (!self.nameField.text) {
-//        return;
-//    }
     self.player.name = self.nameField.text;
     [[GameController sharedInstance] save];
 }

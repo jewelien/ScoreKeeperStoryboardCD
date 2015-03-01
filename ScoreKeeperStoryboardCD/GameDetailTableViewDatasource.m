@@ -17,11 +17,16 @@
 
 @implementation GameDetailTableViewDatasource
 
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//
+//}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.game.players.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     ScoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"playerCell"];
     
     Player *player = [self.players objectAtIndex:indexPath.row];
@@ -42,9 +47,16 @@
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
         [tableView beginUpdates];
         [[GameController sharedInstance] removePlayer:[self.players objectAtIndex:indexPath.row]];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+        NSMutableArray *players = [[NSMutableArray alloc] initWithArray:self.players];
+        [players removeObjectAtIndex:indexPath.row];
+        self.players = players;
+        
         [tableView endUpdates];
     }
 }

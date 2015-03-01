@@ -79,6 +79,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [[GameController sharedInstance] removeGame:[[GameController sharedInstance].games objectAtIndex:indexPath.row]];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+        
     }
 }
 
