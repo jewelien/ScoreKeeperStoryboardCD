@@ -19,6 +19,8 @@
 
 - (Game *)createGameWithTitle:(NSString *)title;
 - (void)addPlayerToGame:(Game *)game;
+- (void)removeGame:(Game *)game;
+- (void)removePlayer:(Player *)player;
 
 - (void)save;
 

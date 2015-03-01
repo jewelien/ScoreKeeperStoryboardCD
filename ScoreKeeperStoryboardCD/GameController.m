@@ -37,8 +37,23 @@
     [self save];
 }
 
+- (void)removeGame:(Game *)game {
+    [game.managedObjectContext deleteObject:game];
+    [self save];
+}
+
+- (void)removePlayer:(Player *)player {
+    if (!player) {
+        return;
+    }
+    [player.managedObjectContext deleteObject:player];
+    [self save];
+}
+
 - (void)save {
     [[CoreDataHelper sharedInstance] save];
+    // calling "[[self managedObjectContext] save:NULL];" save method in coredatahelper.
+
 }
 
 @end

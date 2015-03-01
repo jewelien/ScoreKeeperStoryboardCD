@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.titleField.text = self.game.title; //? working
+    self.titleField.text = self.game.title;
     [self.tableView reloadData];
     
 }
@@ -37,6 +37,7 @@
     return YES;
 }
 
+
 - (IBAction)addPlayer:(id)sender {
     [[GameController sharedInstance] addPlayerToGame:self.game];
     [self.datasource updatePlayerWithGame:self.game];
@@ -45,9 +46,16 @@
 
 - (void)updateWithGame:(Game *)game {
     self.game = game;
-//    self.titleField.text = self.game.title;
     [self.datasource updatePlayerWithGame:game];
 }
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

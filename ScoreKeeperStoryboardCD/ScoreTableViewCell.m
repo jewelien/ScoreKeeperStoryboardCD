@@ -45,13 +45,14 @@
     return YES;
 }
 
+
 - (IBAction)savePlayerName:(id)sender {
-    self.player.name = self.nameField.text; //?
-    [[GameController sharedInstance] save];  //?
-}
-
--(void)textFieldDidEndEditing:(UITextField *)textField {
-
+    //textfield did end editing
+//    if (!self.nameField.text) {
+//        return;
+//    }
+    self.player.name = self.nameField.text;
+    [[GameController sharedInstance] save];
 }
 
 
